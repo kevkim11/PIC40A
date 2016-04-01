@@ -1,0 +1,46 @@
+html,body
+{
+  margin:0;
+  padding:0;
+}
+
+#main_container
+{
+  background-color:red;
+  width:800px;
+}
+
+header 
+{
+background-color:orange;
+}
+
+#sidebar 
+{ 
+  background-color:green;
+  float: left;
+  width:200px;
+  padding-top:0;
+  padding-right:15px;
+  padding-bottom:0;
+  padding-left:15px;
+}
+
+#content {
+  background-color:blue;
+  margin-left:200px;
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:0;
+  padding-top:0;
+}
+
+footer 
+{
+  background-color:yellow;
+    clear:both;
+}
+html,body,article p,article h2,footer p,header h1 {
+margin:0;
+padding:0;
+}

@@ -1,0 +1,27 @@
+html,body
+{
+  margin:0;
+  padding:0;
+}
+
+#main_container
+{
+  background-color:red;
+  width:800px;
+}
+
+header {
+background-color:orange;
+}
+
+#sidebar {
+background-color:green;
+}
+
+#content {
+background-color:blue;
+}
+
+footer {
+background-color:yellow;
+}

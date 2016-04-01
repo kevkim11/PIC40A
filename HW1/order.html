@@ -1,0 +1,85 @@
+<?xmlversion = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+ 	<title>Kevin's Brewery's Order Form</title>
+ </head>
+ <body>
+ <h1>Order Form</h1></br>
+ <form method="get" action="">
+ 	<fieldset>
+ 		<legend> Customer Information</legend>
+ 		<!-- <label for="name"> </label> -->
+ 		<label for="name"> Name: </label>
+ 	   <input type="text" name="name" id="name"/><br />
+ 	   <label for="streetname"> Street: </label>
+       <input type="text" name="street name" id="streetname"/><br/>
+       <label for="cityname"> City: </label>
+       <input type="text" name = "city name" id="cityname"/><br/>
+       <label for="statename"> State: </label>
+       <input type="text" name = "state name" id = "statename"/><br/>
+       <label for="zipcode"> Zipcode: </label>
+       <input type="text" name = "zip code" id="zipcode"/>
+ 	</fieldset>
+ 	<fieldset>
+ 		<legend> Order Information</legend>
+ 		<p>
+ 			How did you find out about us?
+ 			<input type="radio" name="findout" id="Commercial" />
+ 			<label for="Commercial"> Commercial </label>
+ 			<!-- Commercial -->
+ 			<input type="radio" name="findout" id="magazineAd" />
+ 			<label for="magazineAd"> Magazine Ad </label>
+ 			<input type="radio" name="findout" id="Other" />
+ 			<label for="Other"> Other </label>
+ 			</br>
+ 			<input type="checkbox" name="summer" id="Yes"/> 
+ 			<label for="Yes"> Send me emails about future products. </label>
+ 		</p>
+ 				<label for="product list"> Product List</label>
+ 		        <table border="1" id="productlist">
+      <tr> <!--Row -->
+      <!--Column -->
+        <td><b>Product</b></td><td><b>Description</b></td><td><b>Price</b></td><td><b>Qty</b></td>
+      </tr>
+      <tr>
+        <td><label for = "kevinssignature">Kevin's Signature</label></td><td>6 pack/12 oz bottle (IPA)</td><td>$15.50</td><td><input type="text"name="Kevin's Signature" id="kevinssignature"/></td>
+      </tr>
+      <tr>
+        <td><label for = "duckpaleale">Duck Pale Ale</label></td><td>6 pack/12 oz bottle (Pale Ale)</td><td>$13.75</td><td><input type="text"name="Duck Pale Ale" id="duckpaleale"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td><label for = "eugenelager">Eugene Lager</label></td><td>6 pack/12 oz bottle (Lager)</td><td>$12.50</td><td><input type="text"name="Eugene Lager" id= "eugenelager"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td><label for = "willametevalley">Willamete Valley</label></td><td>6 pack/12 oz bottle (Pilsner)</td><td>$15.50</td><td><input type="text"name="Willamete Valley" id="willametevalley"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td><label for = "bruinspecial">Bruin Special</label></td><td>6 pack/12 oz bottle (Stout)</td><td>$14.25</td><td><input type="text"name="Bruin Special" id="bruinspecial"/></td></td>
+      </tr>
+      </tr>
+        </table></br>
+    <label for = "creditcard">Select a credit card</label><select name="payment" id="credicard">
+    	<option value="Visa">Visa</option>
+    	<option value="Master Card">Master Card</option>
+    </select></br>
+    <label for = "creditcardnumber">Credit Card Number</label><input type="password" name="creditcardnumber" id="credicardnumber"/>
+ 	</fieldset>
+  	<fieldset>
+ 		<input type="reset" />
+		<input type="submit" value="Send" />
+ 	</fieldset>	
+ </form>
+ <h3>Try my brews today!</h3>
+     <p>
+      <a href="http://validator.w3.org/check?uri=referer"><img 
+      src="http://www.w3.org/Icons/valid-xhtml11"
+      alt ="Valid XHTML 1.1" height="31" width="88"/></a>
+    </p>
+ </body>

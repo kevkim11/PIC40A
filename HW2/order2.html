@@ -1,0 +1,72 @@
+<?xmlversion = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+ 	<title>Kevin's Brewery's Order Form</title>
+  <link href = "mybusiness.css" rel = "stylesheet" type = "text/css"/>
+ </head>
+ <body>
+ <h1 id="order_form">Order Form</h1></br>
+ <form method="get" action="">
+
+ 	<fieldset id = "customer_information">
+ 		<legend> Customer Information</legend>
+ 		<!-- <label for="name"> </label> -->
+ 	   Name: <input type="text" name="name" id="name"/><br />
+       Street: <input type="text" name="street name"/><br/>
+       City: <input type="text" name = "city name"/><br/>
+       State: <input type="text" name = "state name"/><br/>
+       Zipcode: <input type="text" name = "zip code"/>
+ 	</fieldset>
+ 	<fieldset id = "order_information">
+ 		<legend> Order Information</legend>
+ 		<p>
+ 			How did you find out about us?
+ 			<input type="radio" name="findout" value="Commercial" />Commercial
+ 			<input type="radio" name="findout" value="Magazine" />Magazine Ad
+ 			<input type="radio" name="findout" value="Other" />Other
+ 			</br>
+ 			<input type="checkbox" name="summer" value="Yes"/> Send me emails about future products.
+ 		</p>
+ 				<label for="product list"> Product List</label>
+ 		        <table border="1" id="productlist">
+      <tr id="table_title"> <!--Row -->
+      <!--Column -->
+        <td>Product</td><td>Description</td><td>Price</td><td>Qty</td>
+      </tr>
+      <tr>
+        <td>Kevin's Signature</td><td>6 pack/12 oz bottle (IPA)</td><td>$15.50</td><td><input type="text"name="Kevin's Signature"/></td>
+      </tr>
+      <tr>
+        <td>Duck Pale Ale</td><td>6 pack/12 oz bottle (Pale Ale)</td><td>$13.75</td><td><input type="text"name="Duck Pale Ale"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td>Eugene Lager</td><td>6 pack/12 oz bottle (Lager)</td><td>$12.50</td><td><input type="text"name="Eugene Lager"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td>Willamete Valley</td><td>6 pack/12 oz bottle (Pilsner)</td><td>$15.50</td><td><input type="text"name="Willamete Valley"/></td></td>
+      </tr>
+      </tr>
+      <tr>
+        <td>Bruin Special</td><td>6 pack/12 oz bottle (Stout)</td><td>$14.25</td><td><input type="text"name="Bruin Special"/></td></td>
+      </tr>
+      </tr>
+        </table></br>
+    Select a credit card<select name="payment">
+    	<option value="Visa">Visa</option>
+    	<option value="Master Card">Master Card</option>
+    </select></br>
+    Credit Card Number<input type="password" name="creditcardnumber"/>
+ 	</fieldset>
+  <fieldset>
+ 		<input type="reset" />
+		<input type="submit" value="Send" />
+ 	</fieldset>	
+ </form>
+ <h3>Try by brews today!</h3>
+ </body>

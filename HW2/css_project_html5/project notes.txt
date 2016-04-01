@@ -1,0 +1,125 @@
+
+Stage 0.
+
+Dimensions
+
+Width of main container 800px
+
+height header 144px;
+
+sidebar width 200px
+
+sidebar padding left + right = 40px;
+
+
+content 
+margin-left 240px
+padding-right 20px
+
+footer
+padding-right 60px;
+
+
+
+Stage 1.
+
+Start with the default html code
+
+Establish the main container 
+set the background color to red
+
+Stage 2.
+
+Inside the main container put the other containers
+
+set their colors so we can see what is going on.
+
+stage 3.
+
+Float side bar to the left and set its width to 200px
+
+Stage 4.
+Put some text in content to see how the content element melds with the floated element
+
+Note how text flows around the floated content.
+
+This is not what we want.  We want the two distinct columns
+
+Stage 5.
+Set the margin-left to 200 to push the content to right
+
+Stage 6.
+Fill the side bar with sample text.  Note that the sidebar is not pushing the footer down.
+Explanation: By default, any floated element will not push down elements that are below it.
+This is because floated elements are not considered part of the document ‘flow’.
+ Its like they are on another layer ‘floating’ above the other elements, and becuase of this,
+it can’t effect their positions.
+
+Stage 7.
+Assign clear property to the footer.
+When an element has the clear property assigned, if it comes into contact with a float it is 
+placed right below where that float ends. You can specify if it is effected by only left 
+floats or only right floats, in this case we could use either ‘right’ or ‘both’. We’ll 
+use clear: both just to be safe.
+
+Stage 8.
+
+Add in all the content.
+
+Stage 9.
+
+Lot of margins and paddings introduced by the content, so we take those out to make things clearer.
+
+Stage 10.
+Sidebar and content paddings
+
+Stage 11.
+Fix the overlap by increasing the margin for content
+
+Stage 12.
+Fix the height of the header banner and the side menu and margin and padding.  Elements are now sized correctly.
+center the copy right text using padding property.  Set the properties for the side menu: paddingsand margins.  Set 
+the bottom padding to 153px.  Make the anchor items in list items not have any text decorations, to have a border on the
+bottom of width 1px and solid style.  Display links with block style.
+
+Stage 13.
+Get rid of the background colors.
+
+
+Stage 14.
+Set the fonts, and other font properties.   Get rid of some of the paddings from step 10.
+
+Stage 15.
+Background for the sidemenu.  Sidemenu link hover,active styles
+
+Stage 16.
+Background colors: set main bg to off white (253,253,253) #FDFDFD, set footer bg color
+
+Stage 17.
+Top bg
+
+Stage 18.
+Side background
+
+Stage 19.
+Logo bg, sidebar menu bg, adjust the image so it looks right.
+
+Stage 20.
+insert the image into content
+
+Stage 21.
+Float the image.
+
+Stage 22.
+Center everything
+
+
+
+
+
+
+
+
+
+
+

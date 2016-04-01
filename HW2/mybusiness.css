@@ -1,0 +1,173 @@
+/*h1,h2,h3 {
+  color:white;
+  font-weight:normal;
+  padding-top:10px;
+  font-family: "Times New Roman";
+}*/
+
+/*h1 {
+font-size:30pt;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}*/
+
+header {
+  /*background-color:green;*/
+  font-size:30pt;
+  height:144px;
+  font-family: "Times New Roman";
+  text-align: center;
+  background:url(background.jpg)
+}
+
+/*Navigation Bar*/
+#navbar {
+   margin: 0; 
+   padding: 0;
+   height: 1em;
+   /*width: 800px;*/
+   }
+#navbar li {
+   list-style: none; 
+   float: left; 
+   } 
+#navbar li a {
+   display: block;
+   /*padding: 3px 8px;*/
+   background-color: navy;
+   color: #fff;
+   text-decoration: none;
+   width: 200px; 
+ }
+
+/*Subnavigation Bar
+display: none to prevent the submenu from displaying by default, 
+and giving it a background to make it stand out*/
+#navbar li ul {
+   display: none; 
+   width: 200px; 
+   background-color: purple;}
+   
+#navbar li:hover ul, #navbar li.hover ul {
+   display: block;
+   position: absolute;
+   margin: 0;
+   padding: 0; }
+
+#navbar li:hover li, #navbar li.hover li {
+   float: none; }
+#navbar li:hover li a, #navbar li.hover li a {
+   background-color: #800080;
+   border-bottom: 1px solid #fff;
+   color: #000; }
+#navbar li li a:hover {
+   background-color: #FF0000; }
+
+#main_container
+{
+  /*background-color:red;*/
+  width:800px;
+  margin:auto;
+}
+/*Side Bar*/
+#sidebar {
+  background-color:green;
+  float: left;
+  width:230px;
+  padding-top:0;
+  padding-right:15px;
+  padding-bottom:0;
+  padding-left:15px;
+  height: 1000pt;
+  background-image:url(Craft-Beer1.jpeg);
+  background-size: 200px;
+  background-repeat:no-repeat;
+  background-position: center;
+  /*background-position: bottom;*/
+}
+/*Edits the words/anchor tags inside the sidebar*/
+nav li a {
+  font-size:120%;
+  color:#FFF;
+  text-decoration:none;
+  display:block;
+  background-color:#09553F;
+  padding:8px;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:#3574A7;
+}
+
+/*What happens when you hover over the anchor links*/
+nav li a:hover,nav li active {
+color:#123464; /*Font color*/
+background-color:#B7DAD8; /* Background color*/
+}
+
+nav ul
+{
+  list-style-type:none; /*Get's rid of the dots*/
+  margin-bottom:20px;
+  padding-bottom:153px;
+  padding-top:0;
+  padding-right:0;
+  padding-left:0;
+  margin-top:0;
+  margin-right:0;
+  margin-left:0;
+}
+#content {
+  background-color:#3574A7;
+  margin-left: 240px;
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:0;
+  padding-top:0;
+  height: 1000pt;
+}
+#headshot {
+  float:right;
+  height: 150px;
+  width: 150px;
+}
+#table_title {
+  font-weight: bold;
+}
+footer {
+  background-color:gray; 
+  color:white;
+  clear:both; /*Clear property - Allows to be pushed down, both = pushed by both left and right floated objects*/
+  text-align:center;
+  padding-top:2px;
+  padding-right:0;
+  padding-bottom:2px;
+/*  padding-left:60px;*/
+}
+
+html,body {
+  margin:0;
+  padding:0;
+}
+
+#order_form{
+  background-color: green;
+  font-style: italic;
+}
+
+#customer_information{
+  background-color: green;
+}
+
+#order_information {
+  background-color: red;
+}
+
+#submit {
+  background-color: blue;
+}

@@ -1,0 +1,55 @@
+html, body {
+	height:100%;
+	margin:0px;
+}
+
+body { background-image: url(cloud.jpg);
+       color:white;
+}
+label { font-size: 1.5em;
+        font-weight: bold}
+
+textarea { background-color: white; 
+           color: blue; }
+
+/*div:before { width: 20em;
+	  padding-bottom: ;
+	  }*/
+div { 
+	width: 20em;
+	padding-bottom: 10px;
+	display: block;
+	}
+
+span { 
+	color: silver; 
+	/*float: left;*/
+	margin-left:10px;
+}
+
+.cloudTagWord {
+	display:inline-block;
+}
+
+span:hover { color: white;}
+
+input { 
+		background: blue;
+        color:white;
+        height: 2em;
+
+}
+/*
+7. use the properties of the DOM address for the div element to set a .1em solid silver border for the div. 
+Give the div a blue background. 
+a silver foreground color, 
+and an extra large serif font.
+*/
+.tagCloud {
+	background-color: blue;
+	border: solid;
+	border-color: silver;
+	border-width: .1em;
+	font-family: serif;
+	font-size: large;
+}
