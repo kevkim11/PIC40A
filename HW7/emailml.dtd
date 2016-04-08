@@ -1,0 +1,26 @@
+<!-- File emailml.dtd -->
+<!-- DTD for email.xml -->
+<?xml version="1.0">
+<!DOCTYPE emailml [
+<!ELEMENT emailml (email+)>
+<!ELEMENT email ( to, from, subject?, message, sentInfo)>
+<!ATTLIST email opened CDATA #IMPLIED>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT message (( username| password| confirmationNumber| balance)*)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ATTLIST password encryption CDATA "none">
+<!ELEMENT confirmationNumber (#PCDATA)>
+<!ELEMENT balance (#PCDATA)>
+<!ELEMENT sentInfo ((( datesent, timesent)| datetimesent), emailid)>
+<!ELEMENT datesent (#PCDATA)>
+<!ELEMENT timesent (#PCDATA)>
+<!ELEMENT datetimesent (#PCDATA)>
+<!ELEMENT emailid EMPTY>
+<!ATTLIST emailid number CDATA #REQUIRED>
+]
+html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  3:      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+

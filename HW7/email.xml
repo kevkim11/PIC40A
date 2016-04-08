@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="us-ascii"? >
+<!DOCTYPE  emailml [
+<!ELEMENT emailml (email+)>
+<!ELEMENT email ( to, from, subject?, message, sentInfo)>
+<!ATTLIST email opened CDATA #IMPLIED>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT message (( username| password| confirmationNumber| balance)*)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ATTLIST password encryption CDATA "none">
+<!ELEMENT confirmationNumber (#PCDATA)>
+<!ELEMENT balance (#PCDATA)>
+<!ELEMENT sentInfo ((( datesent, timesent)| datetimesent), emailid)>
+<!ELEMENT datesent (#PCDATA)>
+<!ELEMENT timesent (#PCDATA)>
+<!ELEMENT datetimesent (#PCDATA)>
+<!ELEMENT emailid EMPTY>
+<!ATTLIST emailid number CDATA #REQUIRED>
+]>
+
+<emailml>
+	<email>
+		<to></to>
+		<from></from>
+		<subject></subject>
+		<message>
+			<username></username>
+			<password></password>
+			<confirmationNumber>123456789011</confirmationNumber>
+			<balance></balance>
+		</message>
+		<sentInfo>
+			<datesent></datesent>
+			<timesent></timesent>
+			<emailid number="2342"></emailid>
+		</sentInfo>
+	</email>
+
+	<email>
+		<to></to>
+		<from></from>
+		<subject></subject>
+		<message>
+			<username></username>
+			<password></password>
+			<confirmationNumber>123456789022</confirmationNumber>
+			<balance></balance>
+		</message>
+		<sentInfo>
+			<datetimesent></datetimesent>
+			<emailid number= "12345"></emailid>
+		</sentInfo>
+	</email>
+</emailml>
